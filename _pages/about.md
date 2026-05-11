@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me"
+title: "Homepage"
 excerpt: ""
 author_profile: true
 redirect_from:
@@ -8,165 +8,501 @@ redirect_from:
   - /about.html
 ---
 
-<div style="font-size: 18px; line-height: 1.85; margin-bottom: 28px;">
+<style>
+.home-section {
+  margin: 34px 0 44px 0;
+}
 
-I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. My research interests include <strong>computer vision</strong>, <strong>semantic segmentation</strong>, <strong>visual state space models</strong>, <strong>multimodal learning</strong>, and <strong>deep learning</strong>.
+.home-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #1f2937;
+  letter-spacing: -0.02em;
+}
 
+.bio-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 26px 30px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+  margin-bottom: 30px;
+}
+
+.bio-main {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #374151;
+}
+
+.tag-row {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.88rem;
+  font-weight: 650;
+  border: 1px solid #e0e7ff;
+}
+
+.action-row {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.action-btn {
+  display: inline-block;
+  padding: 9px 15px;
+  border-radius: 10px;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151 !important;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+.action-btn.primary {
+  background: #2563eb;
+  color: #ffffff !important;
+  border-color: #2563eb;
+}
+
+.info-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px 26px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.info-card.soft {
+  background: #fafafa;
+}
+
+.edu-name {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.edu-meta {
+  color: #4b5563;
+  margin-bottom: 14px;
+  font-size: 0.98rem;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.edu-item {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #eef2f7;
+}
+
+.pub-card {
+  border-radius: 18px;
+  padding: 24px 28px;
+  margin: 22px 0;
+  background: #f8fafc;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.055);
+  border: 1px solid #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.pub-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.pub-card.seg::before {
+  background: #4f46e5;
+}
+
+.pub-card.rs::before {
+  background: #0ea5e9;
+}
+
+.pub-card.med::before {
+  background: #10b981;
+}
+
+.pub-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.pub-label.seg {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.pub-label.rs {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.pub-label.med {
+  background: #dcfce7;
+  color: #047857;
+}
+
+.pub-title {
+  font-size: 1.18rem;
+  font-weight: 850;
+  color: #111827;
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+.pub-authors {
+  line-height: 1.75;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 14px;
+}
+
+.pub-short {
+  line-height: 1.85;
+  color: #374151;
+}
+
+.metric-row {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.metric {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+details {
+  margin-top: 14px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: #2563eb;
+  margin-top: 10px;
+}
+
+.detail-box {
+  margin-top: 12px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  line-height: 1.85;
+  color: #374151;
+}
+
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px 28px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.045);
+}
+
+.project-title {
+  font-size: 1.16rem;
+  font-weight: 850;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.project-meta {
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.award-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 17px 18px;
+  background: #fafafa;
+  box-shadow: 0 5px 14px rgba(15, 23, 42, 0.035);
+}
+
+.award-name {
+  font-weight: 850;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.award-meta {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .bio-card,
+  .info-card,
+  .pub-card,
+  .project-card {
+    padding: 20px 18px;
+  }
+}
+</style>
+
+<div class="bio-card" id="about">
+  <div class="bio-main">
+    I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. I am broadly interested in building reliable visual perception models, with the goal of enabling deep learning systems to better understand complex visual structures in real-world scenes.
+  </div>
+
+  <div class="tag-row">
+    <span class="tag">Computer Vision</span>
+    <span class="tag">Semantic Segmentation</span>
+    <span class="tag">Visual State Space Models</span>
+    <span class="tag">Multimodal Learning</span>
+    <span class="tag">Deep Learning</span>
+  </div>
+
+  <div class="action-row">
+    <a class="action-btn primary" href="/files/cv.pdf">Download CV</a>
+    <a class="action-btn" href="https://orcid.org/0009-0004-7405-1131">ORCID</a>
+    <a class="action-btn" href="https://github.com/Longfei-Xiao">GitHub</a>
+  </div>
 </div>
 
----
+<div class="home-section" id="education">
+  <div class="home-title">Education</div>
 
-## Education
+  <div class="info-card soft">
+    <div class="edu-name">Henan Polytechnic University</div>
+    <div class="edu-meta">B.Eng. in Computer Science and Technology &nbsp; | &nbsp; Sep. 2023 - Present</div>
 
-<div style="border: 1px solid #e5e7eb; border-radius: 14px; padding: 20px 24px; margin: 20px 0 34px 0; background: #fafafa; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-
-<div style="font-size: 20px; font-weight: 700; margin-bottom: 6px;">
-Henan Polytechnic University
+    <div class="edu-grid">
+      <div class="edu-item">
+        <strong>GPA</strong><br>
+        4.19 / 5.00
+      </div>
+      <div class="edu-item">
+        <strong>Ranking</strong><br>
+        2 / 160, top 2%
+      </div>
+      <div class="edu-item">
+        <strong>English</strong><br>
+        CET-4, CET-6
+      </div>
+    </div>
+  </div>
 </div>
 
-<div style="font-size: 16px; color: #555; margin-bottom: 14px;">
-B.Eng. in Computer Science and Technology &nbsp; | &nbsp; Sep. 2023 - Present
+<div class="home-section" id="publications">
+  <div class="home-title">Publications</div>
+
+  <div class="pub-card seg">
+    <div class="pub-label seg">Semantic Segmentation · Mamba</div>
+
+    <div class="pub-title">
+      StructMamba-Seg: Boundary-Context Guided Deformable Scan for Semantic Segmentation
+    </div>
+
+    <div class="pub-authors">
+      <strong>Longfei Xiao</strong>, Linlin Zhang, Kang Yang, Changqiu Xu, Shuyu Liu, Jianfang Wang
+    </div>
+
+    <div class="pub-venue">
+      Submitted to International Conference on Neural Information Processing (ICONIP), 2026
+    </div>
+
+    <div class="pub-short">
+      A structure-sensitive Mamba-based semantic segmentation framework that introduces <strong>Boundary-Context Guided Deformable Scan</strong> to adapt scan control to boundaries, small objects, thin structures, and ambiguous regions.
+    </div>
+
+    <div class="metric-row">
+      <span class="metric">Cityscapes: 82.12% mIoU</span>
+      <span class="metric">ADE20K: 50.20% mIoU</span>
+      <span class="metric">Boundary-aware Optimization</span>
+    </div>
+
+    <details>
+      <summary>Show details</summary>
+      <div class="detail-box">
+        StructMamba-Seg bridges the gap between generic scan decisions and segmentation-specific structural requirements. Its BCG-DefScan module incorporates local geometry, boundary prompts, and multi-scale context to jointly predict spatial offsets, local ordering offsets, and gating signals. The framework also introduces an IoU-boundary joint optimization objective to improve regional consistency and boundary details during training.
+      </div>
+    </details>
+  </div>
+
+  <div class="pub-card rs">
+    <div class="pub-label rs">Remote Sensing · Low-light Enhancement</div>
+
+    <div class="pub-title">
+      Towards High-quality Low-Light Remote Sensing Image Enhancement via Geometric and Semantic Prior Guidance
+    </div>
+
+    <div class="pub-authors">
+      Kang Yang, Jiaqi Zhang, Changqiu Xu, <strong>Longfei Xiao</strong>, Tong Liang, Zesheng Zhang
+    </div>
+
+    <div class="pub-venue">
+      Submitted to International Conference on Neural Information Processing (ICONIP), 2026
+    </div>
+
+    <div class="pub-short">
+      A low-light remote sensing image enhancement framework that combines an <strong>HVI-based dual-branch design</strong>, geometric-semantic prior guidance, and adaptive sparse refinement.
+    </div>
+
+    <div class="metric-row">
+      <span class="metric">HVI Dual-branch</span>
+      <span class="metric">DINOv2 + Depth Priors</span>
+      <span class="metric">Adaptive Sparse Refinement</span>
+    </div>
+
+    <details>
+      <summary>Show details</summary>
+      <div class="detail-box">
+        GSPNet addresses illumination degradation, chromatic distortion, and dark-region noise in remote sensing images. It decouples brightness restoration from color recovery in the HVI space, injects semantic and geometric priors from frozen vision foundation models, and uses adaptive sparse refinement to suppress unreliable feature interactions while preserving land-cover structures.
+      </div>
+    </details>
+  </div>
+
+  <div class="pub-card med">
+    <div class="pub-label med">Medical Imaging · 3D Reconstruction</div>
+
+    <div class="pub-title">
+      PDAO-Net: A Physics-Constrained Dual-Domain Alternating Optimization Network for Sparse-View 3D-DSA Reconstruction
+    </div>
+
+    <div class="pub-authors">
+      Changqiu Xu, Xi Wang, Yujia Li, Tong Liang, Kang Yang, <strong>Longfei Xiao</strong>, Yikun Zhang, Yang Chen
+    </div>
+
+    <div class="pub-venue">
+      Submitted to International Conference on Neural Information Processing (ICONIP), 2026
+    </div>
+
+    <div class="pub-short">
+      A physics-constrained reconstruction framework for sparse-view 3D-DSA that alternates between <strong>projection-domain correction</strong> and <strong>image-domain refinement</strong>.
+    </div>
+
+    <div class="metric-row">
+      <span class="metric">Dual-domain Optimization</span>
+      <span class="metric">Measured-view Consistency</span>
+      <span class="metric">Vascular Recovery</span>
+    </div>
+
+    <details>
+      <summary>Show details</summary>
+      <div class="detail-box">
+        PDAO-Net initializes reconstruction in both the image and projection domains using a pre-trained restoration network and forward projection. It unfolds the reconstruction process into an N-stage alternating optimization framework, where corrected projections and refined volumes mutually constrain each other. A measured-view replacement mechanism preserves acquired sparse-view measurements during missing-view projection estimation.
+      </div>
+    </details>
+  </div>
 </div>
 
-<div style="line-height: 1.9;">
-<strong>GPA:</strong> 4.19 / 5.00 &nbsp;&nbsp; <strong>Rank:</strong> 2 / 160, top 2%<br>
-<strong>English:</strong> CET-4, CET-6<br>
-<strong>Core Courses:</strong> Advanced Mathematics, Linear Algebra, Probability and Mathematical Statistics, Discrete Mathematics, Data Structures, Computer Organization
+<div class="home-section" id="research-project">
+  <div class="home-title">Research Project</div>
+
+  <div class="project-card">
+    <div class="project-title">
+      Robustness Analysis and Improvement of ConvNeXt under Real-world Degradation
+    </div>
+
+    <div class="project-meta">
+      Project Leader &nbsp; | &nbsp; Oct. 2025 - Dec. 2025
+    </div>
+
+    <div style="line-height: 1.9; color: #374151;">
+      This project investigates the robustness degradation and high-confidence misclassification of ConvNeXt under real-world corrupted inputs. Based on <strong>ConvNeXt</strong> and <strong>Tiny-ImageNet-200</strong>, I built a hierarchical evaluation protocol covering clean validation, fixed-degradation validation, and degradation-grid testing. The project further introduced degradation augmentation, consistency regularization, sample mixing, and exponential moving average to improve robustness under noise, blur, and JPEG compression.
+    </div>
+  </div>
 </div>
 
-</div>
+<div class="home-section" id="awards">
+  <div class="home-title">Awards</div>
 
----
+  <div class="award-grid">
+    <div class="award-card">
+      <div class="award-name">National Second Prize</div>
+      <div class="award-meta">
+        China Undergraduate Mathematical Contest in Modeling<br>
+        2024 | Team Leader
+      </div>
+    </div>
 
-## Publications
+    <div class="award-card">
+      <div class="award-name">National Third Prize</div>
+      <div class="award-meta">
+        International Mathematical Contest in Modeling<br>
+        2025 | Team Leader
+      </div>
+    </div>
 
-<div style="border-left: 5px solid #4f46e5; padding: 20px 24px; margin: 24px 0; background: #f8fafc; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+    <div class="award-card">
+      <div class="award-name">National Third Prize</div>
+      <div class="award-meta">
+        Belt and Road & BRICS Skills Development and Technology Innovation Competition<br>
+        2025 | Programming Contributor
+      </div>
+    </div>
 
-<div style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">
-StructMamba-Seg: Boundary-Context Guided Deformable Scan for Semantic Segmentation
-</div>
+    <div class="award-card">
+      <div class="award-name">Provincial First Prize</div>
+      <div class="award-meta">
+        China Undergraduate Mathematical Contest in Modeling<br>
+        2025 | Team Leader
+      </div>
+    </div>
 
-<div style="line-height: 1.8; margin-bottom: 8px;">
-<strong>Longfei Xiao</strong>, Linlin Zhang, Kang Yang, Changqiu Xu, Shuyu Liu, Jianfang Wang
-</div>
-
-<div style="font-style: italic; color: #555; margin-bottom: 16px;">
-Submitted to International Conference on Neural Information Processing (ICONIP), 2026
-</div>
-
-<div style="line-height: 1.9;">
-This work proposes <strong>StructMamba-Seg</strong>, a structure-sensitive Mamba-based framework for semantic segmentation. It addresses the mismatch between scan decisions and segmentation-specific structural requirements by introducing <strong>Boundary-Context Guided Deformable Scan (BCG-DefScan)</strong> into the visual state space backbone.
-<br><br>
-BCG-DefScan incorporates local geometry, boundary prompts, and multi-scale contextual cues to jointly predict spatial offsets, local ordering offsets, and gating signals. This design enables sampling positions, local scan order, and offset modulation strength to adapt to object boundaries, small objects, thin structures, and semantically ambiguous regions. The framework further introduces an IoU-boundary joint optimization objective to provide complementary supervision for regional consistency and boundary details during training.
-<br><br>
-The method achieves <strong>82.12% mIoU on Cityscapes</strong> and <strong>50.20% mIoU on ADE20K</strong>, with consistent improvements on structure-sensitive metrics such as Boundary IoU, Boundary F1, hard-class mIoU, and small-class mIoU.
-</div>
-
-</div>
-
-<div style="border-left: 5px solid #0ea5e9; padding: 20px 24px; margin: 24px 0; background: #f8fafc; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-
-<div style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">
-Towards High-quality Low-Light Remote Sensing Image Enhancement via Geometric and Semantic Prior Guidance
-</div>
-
-<div style="line-height: 1.8; margin-bottom: 8px;">
-Kang Yang, Jiaqi Zhang, Changqiu Xu, <strong>Longfei Xiao</strong>, Tong Liang, Zesheng Zhang
-</div>
-
-<div style="font-style: italic; color: #555; margin-bottom: 16px;">
-Submitted to International Conference on Neural Information Processing (ICONIP), 2026
-</div>
-
-<div style="line-height: 1.9;">
-This work presents <strong>GSPNet</strong>, a geometric and semantic prior-guided framework for low-light remote sensing image enhancement. Unlike natural low-light enhancement, remote sensing scenes involve wide-area structures, dense land-cover patterns, and severe noise in under-exposed regions, making both visibility restoration and structural preservation challenging.
-<br><br>
-GSPNet adopts an <strong>HVI-based dual-branch architecture</strong> to decouple illumination restoration from chromatic recovery. It further injects semantic and geometric priors extracted from frozen vision foundation models through a prior-guided modulation module, providing reliable structural guidance for severely under-exposed regions. An adaptive sparse refinement block is introduced to suppress unreliable token correlations caused by dark-region noise while preserving land-cover boundaries and local details.
-<br><br>
-Experiments on low-light remote sensing benchmarks and the LOL dataset demonstrate that GSPNet improves reconstruction fidelity, structural preservation, and perceptual quality, especially in noise suppression and boundary restoration.
-</div>
-
-</div>
-
-<div style="border-left: 5px solid #10b981; padding: 20px 24px; margin: 24px 0 36px 0; background: #f8fafc; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-
-<div style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">
-PDAO-Net: A Physics-Constrained Dual-Domain Alternating Optimization Network for Sparse-View 3D-DSA Reconstruction
-</div>
-
-<div style="line-height: 1.8; margin-bottom: 8px;">
-Changqiu Xu, Xi Wang, Yujia Li, Tong Liang, Kang Yang, <strong>Longfei Xiao</strong>, Yikun Zhang, Yang Chen
-</div>
-
-<div style="font-style: italic; color: #555; margin-bottom: 16px;">
-Submitted to International Conference on Neural Information Processing (ICONIP), 2026
-</div>
-
-<div style="line-height: 1.9;">
-This work proposes <strong>PDAO-Net</strong>, a physics-constrained dual-domain alternating optimization network for sparse-view 3D digital subtraction angiography reconstruction. Sparse-view acquisition can reduce radiation exposure and acquisition time, but incomplete angular sampling often leads to severe streak artifacts, blurred vessel boundaries, and missing small vascular branches.
-<br><br>
-PDAO-Net initializes reconstruction in both the image and projection domains using a pre-trained restoration network and forward projection. It then unfolds the reconstruction process into an <strong>N-stage alternating optimization framework</strong>, where projection-domain correction and image-domain refinement are performed alternately. A measured-view replacement mechanism explicitly preserves acquired sparse-view measurements during missing-view projection estimation, thereby enforcing data consistency.
-<br><br>
-Experiments on simulated and clinical 3D-DSA datasets show that PDAO-Net improves artifact suppression, vascular continuity preservation, and small-branch recovery compared with representative analytical and learning-based methods.
-</div>
-
-</div>
-
----
-
-## Research Project
-
-<div style="border: 1px solid #e5e7eb; border-radius: 14px; padding: 20px 24px; margin: 20px 0 34px 0; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-
-<div style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">
-Robustness Analysis and Improvement of ConvNeXt under Real-world Degradation
-</div>
-
-<div style="font-style: italic; color: #555; margin-bottom: 16px;">
-Project Leader &nbsp; | &nbsp; Oct. 2025 - Dec. 2025
-</div>
-
-<div style="line-height: 1.9;">
-This project investigates the performance degradation and high-confidence misclassification of ConvNeXt under real-world corrupted inputs. Based on <strong>ConvNeXt</strong> and <strong>Tiny-ImageNet-200</strong>, I built a robustness evaluation and improvement framework covering clean validation, fixed-degradation validation, and degradation-grid testing.
-<br><br>
-The project further introduces training-time degradation augmentation, consistency regularization, sample mixing, and exponential moving average to improve robustness under noise, blur, and JPEG compression.
-</div>
-
-</div>
-
----
-
-## Awards
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); gap: 14px; margin-top: 20px;">
-
-<div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 18px; background: #fafafa; box-shadow: 0 2px 6px rgba(0,0,0,0.025);">
-<strong>National Second Prize</strong><br>
-China Undergraduate Mathematical Contest in Modeling, 2024<br>
-Team Leader
-</div>
-
-<div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 18px; background: #fafafa; box-shadow: 0 2px 6px rgba(0,0,0,0.025);">
-<strong>National Third Prize</strong><br>
-International Mathematical Contest in Modeling, 2025<br>
-Team Leader
-</div>
-
-<div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 18px; background: #fafafa; box-shadow: 0 2px 6px rgba(0,0,0,0.025);">
-<strong>National Third Prize</strong><br>
-Belt and Road & BRICS Skills Development and Technology Innovation Competition, 2025<br>
-Programming Contributor
-</div>
-
-<div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 18px; background: #fafafa; box-shadow: 0 2px 6px rgba(0,0,0,0.025);">
-<strong>Provincial First Prize</strong><br>
-China Undergraduate Mathematical Contest in Modeling, 2025<br>
-Team Leader
-</div>
-
-<div style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 18px; background: #fafafa; box-shadow: 0 2px 6px rgba(0,0,0,0.025);">
-<strong>Second Prize</strong><br>
-Henan Provincial College Student Mathematics Competition, 2024
-</div>
-
+    <div class="award-card">
+      <div class="award-name">Second Prize</div>
+      <div class="award-meta">
+        Henan Provincial College Student Mathematics Competition<br>
+        2024
+      </div>
+    </div>
+  </div>
 </div>
