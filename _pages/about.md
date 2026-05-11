@@ -14,11 +14,37 @@ redirect_from:
 }
 
 .home-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 1.55rem;
-  font-weight: 800;
-  margin-bottom: 18px;
-  color: #1f2937;
+  font-weight: 850;
+  margin-bottom: 20px;
+  color: #111827;
   letter-spacing: -0.02em;
+}
+
+.home-title::before {
+  content: attr(data-icon);
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eef2ff 0%, #e0f2fe 100%);
+  border: 1px solid #dbeafe;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  font-size: 1.05rem;
+  flex: 0 0 auto;
+}
+
+.home-title::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, #e5e7eb 0%, rgba(229, 231, 235, 0) 100%);
+  margin-left: 4px;
 }
 
 .bio-card {
@@ -72,12 +98,6 @@ redirect_from:
   background: #ffffff;
   color: #374151 !important;
   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
-}
-
-.action-btn.primary {
-  background: #2563eb;
-  color: #ffffff !important;
-  border-color: #2563eb;
 }
 
 .info-card {
@@ -334,7 +354,7 @@ summary {
 </div>
 
 <div class="home-section" id="education">
-  <div class="home-title">Education</div>
+  <div class="home-title" data-icon="🎓">Education</div>
 
   <div class="info-card soft">
     <div class="edu-head">
@@ -366,7 +386,7 @@ summary {
 </div>
 
 <div class="home-section" id="publications">
-  <div class="home-title">Publications</div>
+  <div class="home-title" data-icon="📚">Publications</div>
 
   <div class="pub-card seg">
     <div class="pub-label seg">Semantic Segmentation · Mamba</div>
@@ -469,7 +489,7 @@ summary {
 </div>
 
 <div class="home-section" id="research-project">
-  <div class="home-title">Research Project</div>
+  <div class="home-title" data-icon="🔬">Research Project</div>
 
   <div class="project-card">
     <div class="project-title">
@@ -487,7 +507,7 @@ summary {
 </div>
 
 <div class="home-section" id="awards">
-  <div class="home-title">Awards</div>
+  <div class="home-title" data-icon="🏆">Awards</div>
 
   <div class="award-grid">
     <div class="award-card">
