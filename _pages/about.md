@@ -92,6 +92,24 @@ redirect_from:
   background: #fafafa;
 }
 
+.edu-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.edu-logo {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+}
+
 .edu-name {
   font-size: 1.18rem;
   font-weight: 800;
@@ -109,7 +127,7 @@ redirect_from:
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 18px;
 }
 
 .edu-item {
@@ -310,7 +328,6 @@ summary {
   </div>
 
   <div class="action-row">
-    <a class="action-btn primary" href="/files/cv.pdf">Download CV</a>
     <a class="action-btn" href="https://orcid.org/0009-0004-7405-1131">ORCID</a>
     <a class="action-btn" href="https://github.com/Longfei-Xiao">GitHub</a>
   </div>
@@ -320,18 +337,26 @@ summary {
   <div class="home-title">Education</div>
 
   <div class="info-card soft">
-    <div class="edu-name">Henan Polytechnic University</div>
-    <div class="edu-meta">B.Eng. in Computer Science and Technology &nbsp; | &nbsp; Sep. 2023 - Present</div>
+    <div class="edu-head">
+      <img class="edu-logo" src="/images/hpu-logo.png" alt="Henan Polytechnic University Logo">
+
+      <div>
+        <div class="edu-name">Henan Polytechnic University</div>
+        <div class="edu-meta">B.Eng. in Computer Science and Technology &nbsp; | &nbsp; Sep. 2023 - Present</div>
+      </div>
+    </div>
 
     <div class="edu-grid">
       <div class="edu-item">
         <strong>GPA</strong><br>
         4.19 / 5.00
       </div>
+
       <div class="edu-item">
         <strong>Ranking</strong><br>
         2 / 160, top 2%
       </div>
+
       <div class="edu-item">
         <strong>English</strong><br>
         CET-4, CET-6
