@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Longfei Xiao"
-description              : "Personal academic homepage of Longfei Xiao. Undergraduate student in Computer Science and Technology at Henan Polytechnic University. Research interests include computer vision, semantic segmentation, visual state space models, multi-modal learning, and deep learning."
+description              : ""
 repository               : "Longfei-Xiao/longfei-xiao.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -58,7 +58,6 @@ author:
   youtube          :
   wikipedia        :
 
-
 # Reading Files
 include:
   - .htaccess
@@ -97,14 +96,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -127,17 +124,14 @@ defaults:
       layout: default
       author_profile: true
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  style: compressed
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: Asia/Shanghai
 
 # Plugins
 plugins:
@@ -146,6 +140,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -154,9 +149,7 @@ whitelist:
   - jekyll-feed
   - jemoji
 
-
 # HTML Compression
-# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
