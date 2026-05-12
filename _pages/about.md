@@ -238,6 +238,28 @@ redirect_from:
   color: #374151;
 }
 
+.pub-figure-wrap {
+  margin: 18px 0 8px 0;
+  text-align: center;
+}
+
+.pub-figure {
+  display: block;
+  max-width: 100%;
+  max-height: 520px;
+  margin: 0 auto;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  background: #ffffff;
+}
+
+.pub-figcap {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
 .metric-row {
   margin-top: 14px;
   display: flex;
@@ -331,6 +353,10 @@ summary {
   .project-card {
     padding: 20px 18px;
   }
+
+  .pub-figure {
+    max-height: 360px;
+  }
 }
 </style>
 
@@ -374,7 +400,7 @@ summary {
 
       <div class="edu-item">
         <strong>Ranking</strong><br>
-        2 / 160, top 1.5%
+        2 / 160, top 2%
       </div>
 
       <div class="edu-item">
@@ -407,10 +433,14 @@ summary {
       A structure-sensitive Mamba-based semantic segmentation framework that introduces <strong>Boundary-Context Guided Deformable Scan</strong> to adapt scan control to boundaries, small objects, thin structures, and ambiguous regions.
     </div>
 
+    <div class="pub-figure-wrap">
+      <img class="pub-figure" src="/images/structmamba-mech.png" alt="StructMamba-Seg mechanism figure">
+      <div class="pub-figcap">Mechanism overview of StructMamba-Seg and BCG-DefScan.</div>
+    </div>
+
     <div class="metric-row">
-      <span class="metric">Cityscapes: 82.12% mIoU</span>
-      <span class="metric">ADE20K: 50.20% mIoU</span>
-      <span class="metric">Boundary-aware Optimization</span>
+      <span class="metric">ICONIP 2026</span>
+      <span class="metric">CCF-C</span>
     </div>
 
     <details>
@@ -440,10 +470,14 @@ summary {
       A low-light remote sensing image enhancement framework that combines an <strong>HVI-based dual-branch design</strong>, geometric-semantic prior guidance, and adaptive sparse refinement.
     </div>
 
+    <div class="pub-figure-wrap">
+      <img class="pub-figure" src="/images/gspnet-mech.jpg" alt="GSPNet mechanism figure">
+      <div class="pub-figcap">Mechanism overview of GSPNet for low-light remote sensing image enhancement.</div>
+    </div>
+
     <div class="metric-row">
-      <span class="metric">HVI Dual-branch</span>
-      <span class="metric">DINOv2 + Depth Priors</span>
-      <span class="metric">Adaptive Sparse Refinement</span>
+      <span class="metric">ICONIP 2026</span>
+      <span class="metric">CCF-C</span>
     </div>
 
     <details>
@@ -473,10 +507,14 @@ summary {
       A physics-constrained reconstruction framework for sparse-view 3D-DSA that alternates between <strong>projection-domain correction</strong> and <strong>image-domain refinement</strong>.
     </div>
 
+    <div class="pub-figure-wrap">
+      <img class="pub-figure" src="/images/pdao-net-mech.jpg" alt="PDAO-Net mechanism figure">
+      <div class="pub-figcap">Mechanism overview of PDAO-Net for sparse-view 3D-DSA reconstruction.</div>
+    </div>
+
     <div class="metric-row">
-      <span class="metric">Dual-domain Optimization</span>
-      <span class="metric">Measured-view Consistency</span>
-      <span class="metric">Vascular Recovery</span>
+      <span class="metric">ICONIP 2026</span>
+      <span class="metric">CCF-C</span>
     </div>
 
     <details>
