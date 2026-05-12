@@ -400,7 +400,7 @@ summary {
 
       <div class="edu-item">
         <strong>Ranking</strong><br>
-        2 / 160, top 2%
+        2 / 160, top 1.5%
       </div>
 
       <div class="edu-item">
