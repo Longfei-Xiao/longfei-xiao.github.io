@@ -379,9 +379,9 @@ summary {
 
 <div class="bio-card" id="about">
   <div class="bio-main">
-    I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. My academic interests mainly lie in <strong>computer vision</strong>, including semantic segmentation, image enhancement, visual representation learning, and robust deep learning.
+    I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. My academic interests mainly focus on <strong>computer vision</strong>, with a particular interest in semantic segmentation, image enhancement, visual representation learning, and robust deep learning.
     <br><br>
-    Outside research, I am a big fan of badminton and tennis, and I can hold my own in both. Although my height is not exactly basketball-friendly, I am always happy to meet friends on the badminton or tennis court. I am also interested in history and enjoy thinking about how people, technology, and society evolve over time. I like singing as well, although my voice is probably more enthusiastic than beautiful.
+    Beyond research, I am deeply passionate about badminton and tennis, and I would say I am reasonably good at both. Basketball, however, has never been especially kind to my height, so I usually meet friends on the badminton or tennis court instead. I also enjoy history, thinking about how people and society change over time, and singing — though, to be fair, my enthusiasm for singing may be stronger than my actual voice.
   </div>
 
   <div class="tag-row">
@@ -390,14 +390,6 @@ summary {
     <span class="tag">Image Enhancement</span>
     <span class="tag">Visual Representation Learning</span>
     <span class="tag">Robust Deep Learning</span>
-  </div>
-
-  <div class="tag-row">
-    <span class="tag">Computer Vision</span>
-    <span class="tag">Semantic Segmentation</span>
-    <span class="tag">Remote Sensing Enhancement</span>
-    <span class="tag">Model Robustness</span>
-    <span class="tag">Deep Learning</span>
   </div>
   
   <div class="action-row">
