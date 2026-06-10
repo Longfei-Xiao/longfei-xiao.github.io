@@ -99,7 +99,11 @@ redirect_from:
   color: #374151 !important;
   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
 }
-
+.action-btn.primary {
+  background: #2563eb;
+  color: #ffffff !important;
+  border-color: #2563eb;
+}
 .info-card {
   border: 1px solid #e5e7eb;
   border-radius: 16px;
@@ -374,8 +378,9 @@ summary {
   </div>
 
   <div class="action-row">
-    <a class="action-btn" href="https://orcid.org/0009-0004-7405-1131">ORCID</a>
-    <a class="action-btn" href="https://github.com/Longfei-Xiao">GitHub</a>
+    <a class="action-btn primary" href="/files/cv.pdf" target="_blank" rel="noopener">CV</a>
+    <a class="action-btn" href="https://orcid.org/0009-0004-7405-1131" target="_blank" rel="noopener">ORCID</a>
+    <a class="action-btn" href="https://github.com/Longfei-Xiao" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div>
 
