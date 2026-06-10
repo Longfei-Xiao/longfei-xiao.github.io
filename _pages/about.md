@@ -99,11 +99,13 @@ redirect_from:
   color: #374151 !important;
   box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
 }
+
 .action-btn.primary {
   background: #2563eb;
   color: #ffffff !important;
   border-color: #2563eb;
 }
+
 .info-card {
   border: 1px solid #e5e7eb;
   border-radius: 16px;
@@ -189,10 +191,6 @@ redirect_from:
   background: #0ea5e9;
 }
 
-.pub-card.med::before {
-  background: #10b981;
-}
-
 .pub-label {
   display: inline-block;
   padding: 5px 10px;
@@ -210,11 +208,6 @@ redirect_from:
 .pub-label.rs {
   background: #e0f2fe;
   color: #0369a1;
-}
-
-.pub-label.med {
-  background: #dcfce7;
-  color: #047857;
 }
 
 .pub-title {
@@ -349,6 +342,7 @@ summary {
   color: #4b5563;
   line-height: 1.7;
 }
+
 .cert-details {
   margin-top: 12px;
 }
@@ -368,6 +362,7 @@ summary {
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
   background: #ffffff;
 }
+
 @media (max-width: 768px) {
   .bio-card,
   .info-card,
@@ -384,14 +379,14 @@ summary {
 
 <div class="bio-card" id="about">
   <div class="bio-main">
-    I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. I am broadly interested in building reliable visual perception models, with the goal of enabling deep learning systems to better understand complex visual structures in real-world scenes.
+    I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. My academic interests focus on <strong>computer vision</strong>, especially semantic segmentation, low-light remote sensing image enhancement, visual state space models, and model robustness under real-world degradations.
   </div>
 
   <div class="tag-row">
     <span class="tag">Computer Vision</span>
     <span class="tag">Semantic Segmentation</span>
-    <span class="tag">Visual State Space Models</span>
-    <span class="tag">Multimodal Learning</span>
+    <span class="tag">Remote Sensing Enhancement</span>
+    <span class="tag">Model Robustness</span>
     <span class="tag">Deep Learning</span>
   </div>
   
@@ -428,7 +423,7 @@ summary {
 
       <div class="edu-item">
         <strong>English</strong><br>
-        CET-4, CET-6
+        CET-4, CET-6 (452)
       </div>
     </div>
   </div>
@@ -438,7 +433,7 @@ summary {
   <div class="home-title" data-icon="📚">Publications</div>
 
   <div class="pub-card seg">
-    <div class="pub-label seg">Semantic Segmentation · Mamba</div>
+    <div class="pub-label seg">Semantic Segmentation · Visual State Space Models</div>
 
     <div class="pub-title">
       StructMamba-Seg: Boundary-Context Guided Deformable Scan for Semantic Segmentation
@@ -449,11 +444,11 @@ summary {
     </div>
 
     <div class="pub-venue">
-      Submitted to International Conference on Neural Information Processing (ICONIP), 2026
+      Under Review · ICONIP 2026 · CCF-C · First Author
     </div>
 
     <div class="pub-short">
-      A structure-sensitive Mamba-based semantic segmentation framework that introduces <strong>Boundary-Context Guided Deformable Scan</strong> to adapt scan control to boundaries, small objects, thin structures, and ambiguous regions.
+      This work proposes <strong>StructMamba-Seg</strong> for challenging semantic segmentation regions such as object boundaries, small objects, fine structures, and semantically ambiguous areas. It introduces <strong>BCG-DefScan</strong> into Mamba-based visual state space models, using local features, boundary prompts, and multi-scale context to predict spatial offsets, local scan-order offsets, and gating signals for structure-adaptive scanning.
     </div>
 
     <div class="pub-figure-wrap">
@@ -464,18 +459,19 @@ summary {
     <div class="metric-row">
       <span class="metric">ICONIP 2026</span>
       <span class="metric">CCF-C</span>
+      <span class="metric">First Author</span>
     </div>
 
     <details>
       <summary>Show details</summary>
       <div class="detail-box">
-        StructMamba-Seg bridges the gap between generic scan decisions and segmentation-specific structural requirements. Its BCG-DefScan module incorporates local geometry, boundary prompts, and multi-scale context to jointly predict spatial offsets, local ordering offsets, and gating signals. The framework also introduces an IoU-boundary joint optimization objective to improve regional consistency and boundary details during training.
+        I served as the first author and independently completed the literature review, idea design, model implementation, experimental training, ablation validation, figure preparation, and paper writing. The model achieves <strong>82.12% mIoU</strong> on Cityscapes and <strong>50.20% mIoU</strong> on ADE20K, with stable improvements on structure-sensitive metrics including Boundary IoU, Boundary F1, and Hard-class mIoU.
       </div>
     </details>
   </div>
 
   <div class="pub-card rs">
-    <div class="pub-label rs">Remote Sensing · Low-light Enhancement</div>
+    <div class="pub-label rs">Remote Sensing · Low-light Image Enhancement</div>
 
     <div class="pub-title">
       Towards High-quality Low-Light Remote Sensing Image Enhancement via Geometric and Semantic Prior Guidance
@@ -486,11 +482,11 @@ summary {
     </div>
 
     <div class="pub-venue">
-      Submitted to International Conference on Neural Information Processing (ICONIP), 2026
+      ICONIP 2026 · CCF-C · Student First Author
     </div>
 
     <div class="pub-short">
-      A low-light remote sensing image enhancement framework that combines an <strong>HVI-based dual-branch design</strong>, geometric-semantic prior guidance, and adaptive sparse refinement.
+      This work constructs <strong>GSPNet</strong> for low-light remote sensing image enhancement, targeting brightness degradation, color distortion, dark-region noise propagation, and blurred land-cover boundaries. It decouples illumination and chromatic restoration with an HVI dual-branch representation, introduces semantic and geometric priors for structural modulation, and designs adaptive sparse refinement to suppress dark-region noise while preserving land-cover consistency.
     </div>
 
     <div class="pub-figure-wrap">
@@ -501,49 +497,13 @@ summary {
     <div class="metric-row">
       <span class="metric">ICONIP 2026</span>
       <span class="metric">CCF-C</span>
+      <span class="metric">Student First Author</span>
     </div>
 
     <details>
       <summary>Show details</summary>
       <div class="detail-box">
-        GSPNet addresses illumination degradation, chromatic distortion, and dark-region noise in remote sensing images. It decouples brightness restoration from color recovery in the HVI space, injects semantic and geometric priors from frozen vision foundation models, and uses adaptive sparse refinement to suppress unreliable feature interactions while preserving land-cover structures.
-      </div>
-    </details>
-  </div>
-
-  <div class="pub-card med">
-    <div class="pub-label med">Medical Imaging · 3D Reconstruction</div>
-
-    <div class="pub-title">
-      PDAO-Net: A Physics-Constrained Dual-Domain Alternating Optimization Network for Sparse-View 3D-DSA Reconstruction
-    </div>
-
-    <div class="pub-authors">
-      Changqiu Xu, Xi Wang, Yujia Li, Tong Liang, Kang Yang, <strong>Longfei Xiao</strong>, Yikun Zhang, Yang Chen
-    </div>
-
-    <div class="pub-venue">
-      Submitted to International Conference on Neural Information Processing (ICONIP), 2026
-    </div>
-
-    <div class="pub-short">
-      A physics-constrained reconstruction framework for sparse-view 3D-DSA that alternates between <strong>projection-domain correction</strong> and <strong>image-domain refinement</strong>.
-    </div>
-
-    <div class="pub-figure-wrap">
-      <img class="pub-figure" src="/images/pdao-net-mech.jpg" alt="PDAO-Net mechanism figure">
-      <div class="pub-figcap">Mechanism overview of PDAO-Net for sparse-view 3D-DSA reconstruction.</div>
-    </div>
-
-    <div class="metric-row">
-      <span class="metric">ICONIP 2026</span>
-      <span class="metric">CCF-C</span>
-    </div>
-
-    <details>
-      <summary>Show details</summary>
-      <div class="detail-box">
-        PDAO-Net initializes reconstruction in both the image and projection domains using a pre-trained restoration network and forward projection. It unfolds the reconstruction process into an N-stage alternating optimization framework, where corrected projections and refined volumes mutually constrain each other. A measured-view replacement mechanism preserves acquired sparse-view measurements during missing-view projection estimation.
+        I participated in method framework design, literature organization, experimental discussion, paper refinement, technical-route summarization, comparison analysis, and figure/table preparation. The method achieves overall leading performance on LOL and low-light remote sensing benchmarks. On iSAID-Dark, it reaches <strong>26.03 dB PSNR</strong>, <strong>0.796 SSIM</strong>, and <strong>0.166 LPIPS</strong>.
       </div>
     </details>
   </div>
@@ -558,83 +518,89 @@ summary {
     </div>
 
     <div class="project-meta">
-      Project Leader &nbsp; | &nbsp; Oct. 2025 - Dec. 2025
+      Independent Project · Project Leader
     </div>
 
     <div style="line-height: 1.9; color: #374151;">
-      This project investigates the robustness degradation and high-confidence misclassification of ConvNeXt under real-world corrupted inputs. Based on <strong>ConvNeXt</strong> and <strong>Tiny-ImageNet-200</strong>, I built a hierarchical evaluation protocol covering clean validation, fixed-degradation validation, and degradation-grid testing. The project further introduced degradation augmentation, consistency regularization, sample mixing, and exponential moving average to improve robustness under noise, blur, and JPEG compression.
+      This project builds a degradation robustness analysis pipeline based on <strong>ConvNeXt-Tiny</strong> and <strong>Tiny-ImageNet-200</strong>. It designs a dual-validation protocol with <strong>Val(Clean)</strong> and <strong>Val(Degraded-Fixed)</strong>, together with a multi-strength <strong>Degradation Grid</strong> testing protocol to evaluate model performance under noise, blur, motion blur, and JPEG compression.
     </div>
+
+    <details>
+      <summary>Show details</summary>
+      <div class="detail-box">
+        I independently completed the degradation evaluation protocol design, fixed degraded validation set construction, M0-M3 robustness training modules, baseline comparison experiments, module-combination ablation studies, and error-sample/high-confidence misclassification analysis. The baseline achieves 0.7800 Clean Top-1 and 0.3910 Degraded Top-1, with a Top-1 Drop of 0.3890. After introducing degradation augmentation, AugMix, Mixup/CutMix, and EMA, Degraded Top-1 improves to 0.6910 and Top-1 Drop decreases to 0.0761.
+      </div>
+    </details>
   </div>
 </div>
 
 <div class="home-section" id="awards">
   <div class="home-title" data-icon="🏆">Awards</div>
 
-    <div class="award-grid">
-      <div class="award-card">
-        <div class="award-name">National Second Prize</div>
-        <div class="award-meta">
-          China Undergraduate Mathematical Contest in Modeling<br>
-          2024 | Team Leader
-        </div>
-  
-        <details class="cert-details">
-          <summary>View Certificate</summary>
-          <img class="cert-img" src="/images/awards/cumcm-2024-national-second.jpg" alt="CUMCM 2024 National Second Prize Certificate">
-        </details>
+  <div class="award-grid">
+    <div class="award-card">
+      <div class="award-name">National Second Prize</div>
+      <div class="award-meta">
+        China Undergraduate Mathematical Contest in Modeling<br>
+        2024 | Team Leader, Programming & Modeling
       </div>
-  
-      <div class="award-card">
-        <div class="award-name">National Third Prize</div>
-        <div class="award-meta">
-          International Mathematical Contest in Modeling<br>
-          2025 | Team Leader
-        </div>
-  
-        <details class="cert-details">
-          <summary>View Certificate</summary>
-          <img class="cert-img" src="/images/awards/mcm-2025-national-third.jpg" alt="MCM 2025 National Third Prize Certificate">
-        </details>
+
+      <details class="cert-details">
+        <summary>View Certificate</summary>
+        <img class="cert-img" src="/images/awards/cumcm-2024-national-second.jpg" alt="CUMCM 2024 National Second Prize Certificate">
+      </details>
+    </div>
+
+    <div class="award-card">
+      <div class="award-name">National Third Prize</div>
+      <div class="award-meta">
+        International Mathematical Contest in Modeling<br>
+        2025 | Team Leader, Programming & Modeling
       </div>
-  
-      <div class="award-card">
-        <div class="award-name">National Third Prize</div>
-        <div class="award-meta">
-          Belt and Road & BRICS Skills Development and Technology Innovation Competition<br>
-          2025 | Programming Contributor
-        </div>
-  
-        <details class="cert-details">
-          <summary>View Certificate</summary>
-          <img class="cert-img" src="/images/awards/brics-2025-national-third.jpg" alt="BRICS 2025 National Third Prize Certificate">
-        </details>
+
+      <details class="cert-details">
+        <summary>View Certificate</summary>
+        <img class="cert-img" src="/images/awards/mcm-2025-national-third.jpg" alt="MCM 2025 National Third Prize Certificate">
+      </details>
+    </div>
+
+    <div class="award-card">
+      <div class="award-name">National Third Prize</div>
+      <div class="award-meta">
+        Belt and Road & BRICS Skills Development and Technology Innovation Competition<br>
+        2025 | Programming Contributor
       </div>
-  
-      <div class="award-card">
-        <div class="award-name">Provincial First Prize</div>
-        <div class="award-meta">
-          China Undergraduate Mathematical Contest in Modeling<br>
-          2025 | Team Leader
-        </div>
-  
-        <details class="cert-details">
-          <summary>View Certificate</summary>
-          <img class="cert-img" src="/images/awards/cumcm-2025-provincial-first.jpg" alt="CUMCM 2025 Provincial First Prize Certificate">
-        </details>
+
+      <details class="cert-details">
+        <summary>View Certificate</summary>
+        <img class="cert-img" src="/images/awards/brics-2025-national-third.jpg" alt="BRICS 2025 National Third Prize Certificate">
+      </details>
+    </div>
+
+    <div class="award-card">
+      <div class="award-name">Provincial First Prize</div>
+      <div class="award-meta">
+        China Undergraduate Mathematical Contest in Modeling<br>
+        2025 | Team Leader, Programming & Modeling
       </div>
-  
-      <div class="award-card">
-        <div class="award-name">Second Prize</div>
-        <div class="award-meta">
-          Henan Provincial College Student Mathematics Competition<br>
-          2024
-        </div>
-  
-        <details class="cert-details">
-          <summary>View Certificate</summary>
-          <img class="cert-img" src="/images/awards/henan-math-2024-second.jpg" alt="Henan Mathematics Competition 2024 Second Prize Certificate">
-        </details>
+
+      <details class="cert-details">
+        <summary>View Certificate</summary>
+        <img class="cert-img" src="/images/awards/cumcm-2025-provincial-first.jpg" alt="CUMCM 2025 Provincial First Prize Certificate">
+      </details>
+    </div>
+
+    <div class="award-card">
+      <div class="award-name">Provincial Second Prize</div>
+      <div class="award-meta">
+        Henan Provincial College Student Mathematics Competition<br>
+        2024
       </div>
+
+      <details class="cert-details">
+        <summary>View Certificate</summary>
+        <img class="cert-img" src="/images/awards/henan-math-2024-second.jpg" alt="Henan Mathematics Competition 2024 Second Prize Certificate">
+      </details>
     </div>
   </div>
 </div>
