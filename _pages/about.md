@@ -379,7 +379,17 @@ summary {
 
 <div class="bio-card" id="about">
   <div class="bio-main">
-    I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. My academic interests focus on <strong>computer vision</strong>, especially semantic segmentation, low-light remote sensing image enhancement, visual state space models, and model robustness under real-world degradations.
+    I am <strong>Longfei Xiao</strong>, an undergraduate student majoring in <strong>Computer Science and Technology</strong> at <strong>Henan Polytechnic University</strong>. My academic interests mainly lie in <strong>computer vision</strong>, including semantic segmentation, image enhancement, visual representation learning, and robust deep learning.
+    <br><br>
+    Outside research, I am a big fan of badminton and tennis, and I can hold my own in both. Although my height is not exactly basketball-friendly, I am always happy to meet friends on the badminton or tennis court. I am also interested in history and enjoy thinking about how people, technology, and society evolve over time. I like singing as well, although my voice is probably more enthusiastic than beautiful.
+  </div>
+
+  <div class="tag-row">
+    <span class="tag">Computer Vision</span>
+    <span class="tag">Semantic Segmentation</span>
+    <span class="tag">Image Enhancement</span>
+    <span class="tag">Visual Representation Learning</span>
+    <span class="tag">Robust Deep Learning</span>
   </div>
 
   <div class="tag-row">
