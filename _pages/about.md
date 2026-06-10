@@ -349,7 +349,25 @@ summary {
   color: #4b5563;
   line-height: 1.7;
 }
+.cert-details {
+  margin-top: 12px;
+}
 
+.cert-details summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: #2563eb;
+  font-size: 0.9rem;
+}
+
+.cert-img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+  background: #ffffff;
+}
 @media (max-width: 768px) {
   .bio-card,
   .info-card,
@@ -552,44 +570,70 @@ summary {
 <div class="home-section" id="awards">
   <div class="home-title" data-icon="🏆">Awards</div>
 
-  <div class="award-grid">
-    <div class="award-card">
-      <div class="award-name">National Second Prize</div>
-      <div class="award-meta">
-        China Undergraduate Mathematical Contest in Modeling<br>
-        2024 | Team Leader
+    <div class="award-grid">
+      <div class="award-card">
+        <div class="award-name">National Second Prize</div>
+        <div class="award-meta">
+          China Undergraduate Mathematical Contest in Modeling<br>
+          2024 | Team Leader
+        </div>
+  
+        <details class="cert-details">
+          <summary>View Certificate</summary>
+          <img class="cert-img" src="/images/awards/cumcm-2024-national-second.jpg" alt="CUMCM 2024 National Second Prize Certificate">
+        </details>
       </div>
-    </div>
-
-    <div class="award-card">
-      <div class="award-name">National Third Prize</div>
-      <div class="award-meta">
-        International Mathematical Contest in Modeling<br>
-        2025 | Team Leader
+  
+      <div class="award-card">
+        <div class="award-name">National Third Prize</div>
+        <div class="award-meta">
+          International Mathematical Contest in Modeling<br>
+          2025 | Team Leader
+        </div>
+  
+        <details class="cert-details">
+          <summary>View Certificate</summary>
+          <img class="cert-img" src="/images/awards/mcm-2025-national-third.jpg" alt="MCM 2025 National Third Prize Certificate">
+        </details>
       </div>
-    </div>
-
-    <div class="award-card">
-      <div class="award-name">National Third Prize</div>
-      <div class="award-meta">
-        Belt and Road & BRICS Skills Development and Technology Innovation Competition<br>
-        2025 | Programming Contributor
+  
+      <div class="award-card">
+        <div class="award-name">National Third Prize</div>
+        <div class="award-meta">
+          Belt and Road & BRICS Skills Development and Technology Innovation Competition<br>
+          2025 | Programming Contributor
+        </div>
+  
+        <details class="cert-details">
+          <summary>View Certificate</summary>
+          <img class="cert-img" src="/images/awards/brics-2025-national-third.jpg" alt="BRICS 2025 National Third Prize Certificate">
+        </details>
       </div>
-    </div>
-
-    <div class="award-card">
-      <div class="award-name">Provincial First Prize</div>
-      <div class="award-meta">
-        China Undergraduate Mathematical Contest in Modeling<br>
-        2025 | Team Leader
+  
+      <div class="award-card">
+        <div class="award-name">Provincial First Prize</div>
+        <div class="award-meta">
+          China Undergraduate Mathematical Contest in Modeling<br>
+          2025 | Team Leader
+        </div>
+  
+        <details class="cert-details">
+          <summary>View Certificate</summary>
+          <img class="cert-img" src="/images/awards/cumcm-2025-provincial-first.jpg" alt="CUMCM 2025 Provincial First Prize Certificate">
+        </details>
       </div>
-    </div>
-
-    <div class="award-card">
-      <div class="award-name">Second Prize</div>
-      <div class="award-meta">
-        Henan Provincial College Student Mathematics Competition<br>
-        2024
+  
+      <div class="award-card">
+        <div class="award-name">Second Prize</div>
+        <div class="award-meta">
+          Henan Provincial College Student Mathematics Competition<br>
+          2024
+        </div>
+  
+        <details class="cert-details">
+          <summary>View Certificate</summary>
+          <img class="cert-img" src="/images/awards/henan-math-2024-second.jpg" alt="Henan Mathematics Competition 2024 Second Prize Certificate">
+        </details>
       </div>
     </div>
   </div>
