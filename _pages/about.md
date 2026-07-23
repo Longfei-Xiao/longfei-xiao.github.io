@@ -1,3 +1,4 @@
+```markdown
 ---
 permalink: /
 title: "Homepage"
@@ -408,19 +409,21 @@ summary {
 
       <div>
         <div class="edu-name">Henan Polytechnic University</div>
-        <div class="edu-meta">B.Eng. in Computer Science and Technology &nbsp; | &nbsp; Sep. 2023 - Present</div>
+        <div class="edu-meta">
+          B.Eng. in Computer Science and Technology &nbsp; | &nbsp; Sep. 2023 - Present
+        </div>
       </div>
     </div>
 
     <div class="edu-grid">
       <div class="edu-item">
         <strong>GPA</strong><br>
-        4.19 / 5.00
+        4.21 / 5.00
       </div>
 
       <div class="edu-item">
         <strong>Ranking</strong><br>
-        2 / 161, top 1.5%
+        3 / 161, top 2%
       </div>
 
       <div class="edu-item">
@@ -435,7 +438,9 @@ summary {
   <div class="home-title" data-icon="📚">Publications</div>
 
   <div class="pub-card seg">
-    <div class="pub-label seg">Semantic Segmentation · Visual State Space Models</div>
+    <div class="pub-label seg">
+      Semantic Segmentation · Visual State Space Models
+    </div>
 
     <div class="pub-title">
       StructMamba-Seg: Boundary-Context Guided Deformable Scan for Semantic Segmentation
@@ -446,7 +451,7 @@ summary {
     </div>
 
     <div class="pub-venue">
-      Under Review · ICONIP 2026 · CCF-C · First Author
+      ICONIP · CCF-C · First Author
     </div>
 
     <div class="pub-short">
@@ -455,11 +460,13 @@ summary {
 
     <div class="pub-figure-wrap">
       <img class="pub-figure" src="/images/structmamba-mech.png" alt="StructMamba-Seg mechanism figure">
-      <div class="pub-figcap">Mechanism overview of StructMamba-Seg and BCG-DefScan.</div>
+      <div class="pub-figcap">
+        Mechanism overview of StructMamba-Seg and BCG-DefScan.
+      </div>
     </div>
 
     <div class="metric-row">
-      <span class="metric">ICONIP 2026</span>
+      <span class="metric">ICONIP</span>
       <span class="metric">CCF-C</span>
       <span class="metric">First Author</span>
     </div>
@@ -473,7 +480,9 @@ summary {
   </div>
 
   <div class="pub-card rs">
-    <div class="pub-label rs">Remote Sensing · Low-light Image Enhancement</div>
+    <div class="pub-label rs">
+      Remote Sensing · Low-light Image Enhancement
+    </div>
 
     <div class="pub-title">
       Towards High-quality Low-Light Remote Sensing Image Enhancement via Geometric and Semantic Prior Guidance
@@ -484,7 +493,7 @@ summary {
     </div>
 
     <div class="pub-venue">
-      ICONIP 2026 · CCF-C · Student First Author
+      CCF-C · Student First Author
     </div>
 
     <div class="pub-short">
@@ -493,11 +502,12 @@ summary {
 
     <div class="pub-figure-wrap">
       <img class="pub-figure" src="/images/gspnet-mech.jpg" alt="GSPNet mechanism figure">
-      <div class="pub-figcap">Mechanism overview of GSPNet for low-light remote sensing image enhancement.</div>
+      <div class="pub-figcap">
+        Mechanism overview of GSPNet for low-light remote sensing image enhancement.
+      </div>
     </div>
 
     <div class="metric-row">
-      <span class="metric">ICONIP 2026</span>
       <span class="metric">CCF-C</span>
       <span class="metric">Student First Author</span>
     </div>
@@ -530,7 +540,7 @@ summary {
     <details>
       <summary>Show details</summary>
       <div class="detail-box">
-        I independently completed the degradation evaluation protocol design, fixed degraded validation set construction, M0-M3 robustness training modules, baseline comparison experiments, module-combination ablation studies, and error-sample/high-confidence misclassification analysis. The baseline achieves 0.7800 Clean Top-1 and 0.3910 Degraded Top-1, with a Top-1 Drop of 0.3890. After introducing degradation augmentation, AugMix, Mixup/CutMix, and EMA, Degraded Top-1 improves to 0.6910 and Top-1 Drop decreases to 0.0761.
+        I independently completed the degradation evaluation protocol design, fixed degraded validation set construction, M0-M3 robustness training modules, baseline comparison experiments, module-combination ablation studies, and error-sample/high-confidence misclassification analysis. The baseline achieves <strong>0.7800 Clean Top-1</strong> and <strong>0.3910 Degraded Top-1</strong>, with a Top-1 Drop of <strong>0.3890</strong>. After introducing degradation augmentation, AugMix, Mixup/CutMix, and EMA, Degraded Top-1 improves to <strong>0.6910</strong> and Top-1 Drop decreases to <strong>0.0761</strong>.
       </div>
     </details>
   </div>
@@ -540,6 +550,7 @@ summary {
   <div class="home-title" data-icon="🏆">Awards</div>
 
   <div class="award-grid">
+
     <div class="award-card">
       <div class="award-name">National Second Prize</div>
       <div class="award-meta">
@@ -569,6 +580,14 @@ summary {
     <div class="award-card">
       <div class="award-name">National Third Prize</div>
       <div class="award-meta">
+        China University Intelligent Robot Creative Competition<br>
+        2026 | Software Development
+      </div>
+    </div>
+
+    <div class="award-card">
+      <div class="award-name">National Third Prize</div>
+      <div class="award-meta">
         Belt and Road & BRICS Skills Development and Technology Innovation Competition<br>
         2025 | Programming Contributor
       </div>
@@ -592,17 +611,6 @@ summary {
       </details>
     </div>
 
-    <div class="award-card">
-      <div class="award-name">Provincial Second Prize</div>
-      <div class="award-meta">
-        Henan Provincial College Student Mathematics Competition<br>
-        2024
-      </div>
-
-      <details class="cert-details">
-        <summary>View Certificate</summary>
-        <img class="cert-img" src="/images/awards/henan-math-2024-second.jpg" alt="Henan Mathematics Competition 2024 Second Prize Certificate">
-      </details>
-    </div>
   </div>
 </div>
+```
