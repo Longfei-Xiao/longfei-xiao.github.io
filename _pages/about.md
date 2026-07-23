@@ -488,7 +488,7 @@ summary {
     </div>
 
     <div class="pub-authors">
-      Kang Yang, Jiaqi Zhang, Changqiu Xu, <strong>Longfei Xiao</strong>, Tong Liang, Zesheng Zhang
+      Kang Yang, <strong>Longfei Xiao</strong>, Jiaqi Zhang, Changqiu Xu,  Tong Liang, Zesheng Zhang
     </div>
 
     <div class="pub-venue">
