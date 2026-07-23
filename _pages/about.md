@@ -393,7 +393,7 @@ summary {
   </div>
   
   <div class="action-row">
-    <a class="action-btn primary" href="/files/Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a class="action-btn primary" href="/files/Resume1.pdf" target="_blank" rel="noopener">Resume</a>
     <a class="action-btn" href="https://orcid.org/0009-0004-7405-1131" target="_blank" rel="noopener">ORCID</a>
     <a class="action-btn" href="https://github.com/Longfei-Xiao" target="_blank" rel="noopener">GitHub</a>
   </div>
