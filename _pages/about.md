@@ -1,4 +1,4 @@
-```markdown
+
 ---
 permalink: /
 title: "Homepage"
@@ -613,4 +613,3 @@ summary {
 
   </div>
 </div>
-```
