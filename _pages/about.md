@@ -450,7 +450,7 @@ summary {
     </div>
 
     <div class="pub-venue">
-      ICONIP · CCF-C · First Author
+      Accepted at ICONIP 2026 · CCF-C · First Author
     </div>
 
     <div class="pub-short">
@@ -465,7 +465,7 @@ summary {
     </div>
 
     <div class="metric-row">
-      <span class="metric">ICONIP</span>
+      <span class="metric">ICONIP 2026</span>
       <span class="metric">CCF-C</span>
       <span class="metric">First Author</span>
     </div>
@@ -488,11 +488,11 @@ summary {
     </div>
 
     <div class="pub-authors">
-      Kang Yang, <strong>Longfei Xiao</strong>, Jiaqi Zhang, Changqiu Xu,  Tong Liang, Zesheng Zhang
+      Kang Yang, Jiaqi Zhang, Changqiu Xu, <strong>Longfei Xiao</strong>, Tong Liang, Zesheng Zhang
     </div>
 
     <div class="pub-venue">
-      CCF-C · Student First Author
+      Accepted at ICONIP 2026 · CCF-C · Student First Author
     </div>
 
     <div class="pub-short">
@@ -507,6 +507,7 @@ summary {
     </div>
 
     <div class="metric-row">
+      <span class="metric">ICONIP 2026</span>
       <span class="metric">CCF-C</span>
       <span class="metric">Student First Author</span>
     </div>
